@@ -1,0 +1,44 @@
+1)cd ~
+pwd
+mkdir students
+mkdir mentors
+touch ./students/students_list.txt
+touch ./mentors/mentors_list.txt
+
+2)cd students
+nano sudents_list
+cd
+cd mentors
+nano mentors_list
+
+3)mv mentors_list ../students
+
+4)cd
+rm -d mentors
+
+5)mv students students_and_mentors
+
+6)rm -r students_and_mentors
+
+7)touch file1
+nano file1
+cp file1 file2
+ln -s file1 file3
+ln file1 file4
+
+lrwxrwxrwx  1 jack jack       5 июн  5 17:12 file3 -> file1
+
+-rw-rw-r--  2 jack jack       9 июн  5 17:08 file4
+
+rm file1
+
+lrwxrwxrwx  1 jack jack       5 июн  5 17:12 file3 -> file1 (red color, invalid)
+
+-rw-rw-r--  1 jack jack       9 июн  5 17:08 file4
+
+8)touch file_test
+ln -s file_test file_link
+mv file_link test3
+cd test3
+
+lrwxrwxrwx  1 jack jack    9 июн  5 17:17 file_link -> file_test (red color, can't find)

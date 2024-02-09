@@ -1,0 +1,20 @@
+1. 
+a) sudo adduser testuser
+
+b) sudo cat /etc/passwd
+sudo cat /etc/shadow
+sudo id testuser
+
+c) sudo userdel testuser
+
+2.
+a) sudo groupadd testgroup
+
+b) sudo chown testuser:www-data testt
+
+c) sudo visudo
+
+d) -
+
+3.
+a) sudo visudo

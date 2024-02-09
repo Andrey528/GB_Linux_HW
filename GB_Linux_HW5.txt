@@ -1,0 +1,21 @@
+1)
+sudo su
+cd /etc/apt
+apt-add-repository 'http://nginx.org/packages/ubuntu jammy nginx'
+apt update
+apt install -y nginx
+
+dpkg -r nginx
+
+2)
+snap install opera
+
+3)
+nano text.txt
+crontab -e
+------------------
+10 * * * * cp ~/text.txt >> ~/text.txt.bak
+------------------
+crontab -l
+ll
+

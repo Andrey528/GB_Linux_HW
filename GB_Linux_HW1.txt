@@ -1,0 +1,23 @@
+lsb_release -a
+
+No LSB modules are available.
+
+Distributor ID:	Ubuntu
+
+Description:	Ubuntu 22.04.2 LTS
+
+Release:	22.04
+
+Codename:	jammy
+
+sudo apt install gcc make perl
+
+sudo apt install mc
+
+sudo apt install openssh-server
+
+ip a
+
+systemctl status ssh
+
+ssh username@100.50.40.5
